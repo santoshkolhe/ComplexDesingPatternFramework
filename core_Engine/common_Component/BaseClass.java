@@ -17,6 +17,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import common_Functions_Web.WebBrowser;
 import common_Functions_Web.WebButton;
 import dataSource.PropertyReader;
+import nursing_Page_Actions.NursingDemoOne_Page_Action;
 
 public class BaseClass {
 	public static ExtentTest logger;
@@ -39,6 +40,11 @@ public class BaseClass {
 		driver.get(PropertyReader.get_Key_Value("url"));//Nursing Demo
 		//driver.get("https://www.knowledgeware.in/final.html");
 		driver.manage().window().maximize();
+		NursingDemoOne_Page_Action nursingOnePA = new NursingDemoOne_Page_Action(driver, logger);
+		nursingOnePA.nursingDemoProcess(
+				PropertyReader.get_Key_Value("pageOneTitle"), 
+				PropertyReader.get_Key_Value("user"),
+				PropertyReader.get_Key_Value("pass"));
 	}
 	
 	/*public void beforeEachTest(Method testMethod) throws IOException, InterruptedException{
@@ -65,7 +71,15 @@ public class BaseClass {
 	    		"Ramkrishna Chemburkar Marg","Chembur","400803","Maharashtra","India","Reg4","Dancing"},
 	   // new Object[][] {{"Drawing"},{"Singing"},{"Dancing"}},
 	    };
-	}	    
+	}	
+	@DataProvider
+	  public Object[][] NursingDemo() {
+	    return new Object[][] {
+	    new Object[] {"NOVA GRACE HOSPITAL - Dashboard","867354","Virat Kohli","Male","30,10/10/1999","Male","Hindu","Indian","Vilas","Friend","Single","5467890876","8763456778","Kurla Mumbai","Thane"
+	    		,"400454","Kurla Police Station","Kurla post office","80","5.9'","125","80","45","H1_N1","FUTURE GENERALI INDIA INSURANCE CO LTD","General","IN-12345","SP32435","10/10/2022","Dr Tambe","DR S K SINGH","Normal","5678902","GENERAL WARD"},
+	   // new Object[][] {{"Drawing"},{"Singing"},{"Dancing"}},
+	    };
+	}	
 	    
 }	    
 	  

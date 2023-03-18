@@ -1,8 +1,11 @@
 package nursing_Page_Actions;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
+import common_Functions_Web.WebAlert;
 import common_Functions_Web.WebBrowser;
 import common_Functions_Web.WebButton;
 import common_Functions_Web.WebCheckBox;
@@ -163,6 +166,12 @@ public class New_Patient_Admission_Action {
 	public void healthNext(){
 		WebTextBox.click(patientDetailsPL.btnHelthNext(), logger);
 	}
+	public void successMSG(){
+		WebTextBox.click(patientDetailsPL.alertHandle(),logger);
+		
+		
+	}
+	
 	public void newPatientAdmissionProcess(String title, String patient_UHID, String name,String age,
 			String date,String gender,String relision,String nationality,String guardian,
 			String relwithGuardian,String maritalStatus,String contactNo,String altContNo,
@@ -248,6 +257,8 @@ public class New_Patient_Admission_Action {
 			Thread.sleep(2000);
 			//bed(bed);
 			addPatient();
+			Thread.sleep(2000);
+			successMSG();
 			//verifyPage(verifyPage);
 		
 			

@@ -2,15 +2,21 @@ package common_Functions_Web;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
+
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class WebAlert {
 	public static void acceptAlert(Alert alert) {
 		alert.accept();
 	}
 
-	public static void acceptAlert(WebDriver driver) {
+	public static void acceptAlert(WebDriver driver, ExtentTest logger) {
+		
 		driver.switchTo().alert().accept();
+		System.out.println("Alert Handled successfully:");
+		logger.log(LogStatus.PASS, "Tab Clicked Succesfully.");
 	}
 
 	public static void cancelAlert(WebDriver driver) {
@@ -28,13 +34,17 @@ public class WebAlert {
 		alert.accept();
 	}
 	// This function will fetch message on Pop-up
-	public static String getPopupMessage(WebDriver driver) {
+	public static String getPopupMessage(WebDriver driver, String sucessMsg,ExtentTest logger) {
 		String message = null;
 		try {
 			Alert alert = driver.switchTo().alert();
 			message = alert.getText();
-			alert.accept();
-		} catch (Exception e) {
+			if(message.equals(sucessMsg)){
+				alert.accept();
+				System.out.println("Alert Handled successfully:");
+            }
+			System.out.println("Alert not Found");
+ 		} catch (Exception e) {
 			message = null;
 		}
 		System.out.println("message" + message);

@@ -239,6 +239,11 @@ public class New_Patient_Admission_Locator {
 	public WebElement btnHelthNext(){
 	return btnHelthNext;
 	}
+	@FindBy(id="MessageButtonText") 
+	private WebElement btnalert;
+	public WebElement alertHandle(){
+	return btnalert;
+	}
 	
 	
 	

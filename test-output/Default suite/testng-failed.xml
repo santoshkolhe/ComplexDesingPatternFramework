@@ -5,9 +5,9 @@
     <classes>
       <class name="nursing_Page_Tests.NursingDemo_Page_Test">
         <methods>
+          <include name="NursingDemoRegistration1" invocation-numbers="0"/>
           <include name="beforeSuiteStart"/>
           <include name="afterEachTest"/>
-          <include name="NursingDemoRegistration"/>
           <include name="beforeEachTest"/>
         </methods>
       </class> <!-- nursing_Page_Tests.NursingDemo_Page_Test -->
