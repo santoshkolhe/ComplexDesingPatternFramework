@@ -26,10 +26,10 @@ public class WebDropDown {
 		if (WebElementCommon.isClickable(element)) {
 			Select select = new Select(element);
 			select.selectByValue(text);
-			logger.log(LogStatus.PASS, text+ " Select succesfully.");
+			logger.log(LogStatus.PASS, text+ " Bed Select succesfully.");
 		}else{
 			   		
-				logger.log(LogStatus.FAIL, text+ " Unable to Select.");
+				logger.log(LogStatus.FAIL, text+ " Unable to Select Bed");
 			}
 		
 	}
@@ -57,10 +57,14 @@ public class WebDropDown {
 
 	}
 
-	public static void selectByDropDown(List<WebElement> elements, String strVal) {
+	public static void selectDropDownMultiple(List<WebElement> elements, String[] strVal, ExtentTest logger) {
 		for (WebElement ele : elements) {
 			if (ele.getText().equals(strVal)) {
 				ele.click();
+				logger.log(LogStatus.PASS, strVal+ " Select succesfully.");
+			}
+			else{
+				logger.log(LogStatus.FAIL, strVal+ " Unable to Select.");
 			}
 		}
 	}

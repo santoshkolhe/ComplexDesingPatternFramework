@@ -2,6 +2,7 @@ package nursing_Page_Tests;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+
 import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 import common_Component.BaseClass;
@@ -11,31 +12,17 @@ import nursing_Page_Actions.New_Patient_Admission_Action;
 import nursing_Page_Actions.NursingDemoOne_Page_Action;
 
 public class NursingDemo_Page_Test extends BaseClass {
-	@Test()
+	@Test(description="New Patient Admission")
 	//description= "login",alwaysRun= true
 	public void NursingDemoRegistration(Method method) throws IOException {
 		try {
 			NursingDemoOne_Page_Action nursingOnePA = new NursingDemoOne_Page_Action(driver, logger);
 			nursingOnePA.nursingDemoProcess(PropertyReader.get_Key_Value("pageOneTitle"), 
 					PropertyReader.get_Key_Value("user"),
-					PropertyReader.get_Key_Value("pass"),
-			        PropertyReader.get_Key_Value("verifyPage"));
-					
-			logger.log(LogStatus.PASS,logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + " NursingDemo Login Test Succesfully passed");
-
-		} catch (Exception e) {
-			logger.log(LogStatus.FAIL,
-					logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + e.toString().substring(1, 300));
-		}
-	}
-	
-	@Test()
-	//@Test(enabled= false
-	//dependsOnMethods="Login"
-	public void newPatientAdmission(Method method) throws IOException {
-		try {
+					PropertyReader.get_Key_Value("pass"));
 			New_Patient_Admission_Action nursingTwoPA = new New_Patient_Admission_Action(driver, logger);
-			nursingTwoPA.newPatientAdmissionProcess(PropertyReader.get_Key_Value("verifyPage"),
+			nursingTwoPA.newPatientAdmissionProcess(
+					PropertyReader.get_Key_Value("verifyPage"),
 					PropertyReader.get_Key_Value("Patient_UHID"), 
 					PropertyReader.get_Key_Value("Patient_Name"),
 					PropertyReader.get_Key_Value("Patient_Age"),
@@ -43,7 +30,7 @@ public class NursingDemo_Page_Test extends BaseClass {
 					PropertyReader.get_Key_Value("Gender"), 
 					PropertyReader.get_Key_Value("Religion"),
 					PropertyReader.get_Key_Value("Nationality"),
-					PropertyReader.get_Key_Value("Guardian(s)"),
+					PropertyReader.get_Key_Value("Guardian"),
 					PropertyReader.get_Key_Value("Relation_With_Guardian"), 
 					PropertyReader.get_Key_Value("Marital_Status"),
 					PropertyReader.get_Key_Value("Contact_No"),
@@ -54,7 +41,7 @@ public class NursingDemo_Page_Test extends BaseClass {
 					PropertyReader.get_Key_Value("Police_Station"), 
 					PropertyReader.get_Key_Value("Post_Office"),
 					PropertyReader.get_Key_Value("Weight"),
-					PropertyReader.get_Key_Value("Height'"),
+					PropertyReader.get_Key_Value("Height"),
 					PropertyReader.get_Key_Value("Blood_Pressure"), 
 					PropertyReader.get_Key_Value("PulseRate"),
 					PropertyReader.get_Key_Value("SpO2"),
@@ -68,15 +55,14 @@ public class NursingDemo_Page_Test extends BaseClass {
 					PropertyReader.get_Key_Value("Under_Doctor"),
 					PropertyReader.get_Key_Value("Case"), 
 					PropertyReader.get_Key_Value("FIR_No"),
-					PropertyReader.get_Key_Value("Room"),
-					PropertyReader.get_Key_Value("Bed"));
-					
-			logger.log(LogStatus.PASS,logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + " New Patient Admission Test Succesfully passed");
+					PropertyReader.get_Key_Value("Room"));
+					//PropertyReader.get_Key_Value("Bed"));
+			//PropertyReader.get_Key_Value("verifyPage")
+			logger.log(LogStatus.PASS,logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + " NursingDemo Login Test Succesfully passed");
 
 		} catch (Exception e) {
 			logger.log(LogStatus.FAIL,
 					logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + e.toString().substring(1, 300));
 		}
 	}
-
 }

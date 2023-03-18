@@ -2,42 +2,42 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10667" started-at="2023-03-09T18:32:00Z" finished-at="2023-03-09T18:32:11Z">
+  <suite name="Default suite" duration-ms="86014" started-at="2023-03-16T19:24:43Z" finished-at="2023-03-16T19:26:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10667" started-at="2023-03-09T18:32:00Z" finished-at="2023-03-09T18:32:11Z">
-      <class name="knowledgeware_Page_Tests.RegisterOne_Page_Test">
-        <test-method status="PASS" signature="beforeSuiteStart()[pri:0, instance:knowledgeware_Page_Tests.RegisterOne_Page_Test@a67c67e]" name="beforeSuiteStart" is-config="true" duration-ms="60" started-at="2023-03-09T18:32:00Z" finished-at="2023-03-09T18:32:00Z">
+    <test name="Default test" duration-ms="86014" started-at="2023-03-16T19:24:43Z" finished-at="2023-03-16T19:26:09Z">
+      <class name="nursing_Page_Tests.NursingDemo_Page_Test">
+        <test-method status="PASS" signature="beforeSuiteStart()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="beforeSuiteStart" is-config="true" duration-ms="46" started-at="2023-03-16T19:24:42Z" finished-at="2023-03-16T19:24:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuiteStart -->
-        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:knowledgeware_Page_Tests.RegisterOne_Page_Test@a67c67e]" name="beforeEachTest" is-config="true" duration-ms="5439" started-at="2023-03-09T18:32:00Z" finished-at="2023-03-09T18:32:06Z">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="beforeEachTest" is-config="true" duration-ms="4586" started-at="2023-03-16T19:24:43Z" finished-at="2023-03-16T19:24:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void knowledgeware_Page_Tests.RegisterOne_Page_Test.KnowledgewareRegistration(java.lang.reflect.Method) throws java.io.IOException]]>
+                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.NursingDemoRegistration(java.lang.reflect.Method) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="KnowledgewareRegistration(java.lang.reflect.Method)[pri:0, instance:knowledgeware_Page_Tests.RegisterOne_Page_Test@a67c67e]" name="KnowledgewareRegistration" duration-ms="4778" started-at="2023-03-09T18:32:06Z" finished-at="2023-03-09T18:32:10Z">
+        <test-method status="PASS" signature="NursingDemoRegistration(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="NursingDemoRegistration" duration-ms="81367" started-at="2023-03-16T19:24:47Z" description="New Patient Admission" finished-at="2023-03-16T19:26:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void knowledgeware_Page_Tests.RegisterOne_Page_Test.KnowledgewareRegistration(java.lang.reflect.Method) throws java.io.IOException]]>
+                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.NursingDemoRegistration(java.lang.reflect.Method) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- KnowledgewareRegistration -->
-        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:knowledgeware_Page_Tests.RegisterOne_Page_Test@a67c67e]" name="afterEachTest" is-config="true" duration-ms="431" started-at="2023-03-09T18:32:10Z" finished-at="2023-03-09T18:32:11Z">
+        </test-method> <!-- NursingDemoRegistration -->
+        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="afterEachTest" is-config="true" duration-ms="44" started-at="2023-03-16T19:26:08Z" finished-at="2023-03-16T19:26:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-      </class> <!-- knowledgeware_Page_Tests.RegisterOne_Page_Test -->
+      </class> <!-- nursing_Page_Tests.NursingDemo_Page_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

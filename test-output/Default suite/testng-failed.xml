@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="knowledgeware_Page_Tests.RegisterOne_Page_Test">
+      <class name="nursing_Page_Tests.NursingDemo_Page_Test">
         <methods>
           <include name="beforeSuiteStart"/>
           <include name="afterEachTest"/>
+          <include name="NursingDemoRegistration"/>
           <include name="beforeEachTest"/>
-          <include name="KnowledgewareRegistration"/>
         </methods>
-      </class> <!-- knowledgeware_Page_Tests.RegisterOne_Page_Test -->
+      </class> <!-- nursing_Page_Tests.NursingDemo_Page_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

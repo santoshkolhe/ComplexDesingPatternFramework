@@ -32,9 +32,11 @@ public class BaseClass {
 	@BeforeMethod()
 	public void beforeEachTest(Method testMethod) throws IOException{
 		logger = graphicalReport.startTest(testMethod.getName());
-		driver = WebBrowser.getBrowserInstance(PropertyReader.getKeyValue("browser"));//for read data in property file
+		//driver = WebBrowser.getBrowserInstance(PropertyReader.getKeyValue("browser"));//Knowledeware
+		driver = WebBrowser.getBrowserInstance(PropertyReader.get_Key_Value("browser"));//Nursing Demo
 		//driver = WebBrowser.getBrowserInstance("firefox");
-		driver.get(PropertyReader.getKeyValue("url"));//for read data in property file
+		//driver.get(PropertyReader.getKeyValue("url"));//Knowledeware
+		driver.get(PropertyReader.get_Key_Value("url"));//Nursing Demo
 		//driver.get("https://www.knowledgeware.in/final.html");
 		driver.manage().window().maximize();
 	}
@@ -53,7 +55,7 @@ public class BaseClass {
 	public void afterEachTest(){
 		graphicalReport.endTest(logger);
 		graphicalReport.flush();
-		driver.close();
+		//driver.close();
 	}
 	@DataProvider
 	  public Object[][] registerPage1() {

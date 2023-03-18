@@ -1,5 +1,7 @@
 package nursing_Page_Locators;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,12 +16,13 @@ public class New_Patient_Admission_Locator {
 		PageFactory.initElements(driver, this);
 	}
 	//WebElement userName = driver.findElement(By.name("name"));
-	@FindBy(xpath ="//span[normalize-space()='Patient Management']") 
+	@FindBy(xpath ="//span[text()='Patient Management']") 
 	private WebElement ptab;
 	public WebElement clkPatientMgnt(){
 		return ptab;
 	}
 	@FindBy(xpath ="//a[normalize-space()='In-Patient Registration']") 
+	////a[normalize-space()='New Patient Admission']
 	private WebElement rTab;
 	public WebElement clkPatientRegi(){
 		return rTab;
@@ -47,14 +50,13 @@ public class New_Patient_Admission_Locator {
 	public WebElement getBirthDate(){
 		return dob;
 	}
-	
-	@FindBy(xpath ="//span[@id='select2-Gender-container']") 
-	private WebElement gender;
-	public WebElement getGender(){
-	return gender;
+	@FindBy(xpath="//select[@id='Gender']")
+	private WebElement allHobby;
+	public WebElement getGender() {
+		return allHobby;
 	}
 	
-	@FindBy(xpath ="//span[@id='select2-Gender-container']") 
+	@FindBy(xpath ="//select[@id='Religion']") 
 	private WebElement religion;
 	public WebElement getReligion(){
 	return religion;
@@ -76,7 +78,7 @@ public class New_Patient_Admission_Locator {
 	public WebElement getRelation_With_Guardian(){
 	return rel_gardian;
 	}
-	@FindBy(xpath ="//span[@id='select2-MaritalStatus-container']") 
+	@FindBy(xpath ="//select[@id='MaritalStatus']") 
 	private WebElement Marital_Status;
 	public WebElement getMarital_Status(){
 		return Marital_Status;
@@ -156,12 +158,12 @@ public class New_Patient_Admission_Locator {
 	return Prov_Diagnosis;
 	}
 	
-	@FindBy(xpath ="//span[@id='select2-InsurenceCompanyID-container']") 
+	@FindBy(xpath ="//select[@id='InsurenceCompanyID']") 
 	private WebElement Insurence_Company;
 	public WebElement getInsurence_Company(){
 	return Insurence_Company;
 	}
-	@FindBy(xpath ="//span[@id='select2-HealthCardId-container']") 
+	@FindBy(xpath ="//select[@id='HealthCardId']") 
 	private WebElement Select_TPA;
 	public WebElement getSelect_TPA(){
 		return Select_TPA;
@@ -190,10 +192,10 @@ public class New_Patient_Admission_Locator {
 	return Referred_By;
 	}
 	
-	@FindBy(xpath ="//span[@id='select2-DoctorID-container']") 
-	private WebElement Under_Doctor;
-	public WebElement getUnder_Doctor(){
-	return Under_Doctor;
+	@FindBy(xpath ="//select[@id='DoctorID']") 
+	private WebElement underDr;
+	public WebElement getUnderDoctor(){
+	return underDr;
 	}
 	@FindBy(xpath ="//input[@id='Case']") 
 	private WebElement Case;
@@ -206,13 +208,13 @@ public class New_Patient_Admission_Locator {
 		return FIR_No;
 	}
 	
-	@FindBy(xpath ="//span[@id='select2-RoomID-container']") 
+	@FindBy(xpath ="//select[@id='RoomID']") 
 	private WebElement Room;
 	public WebElement getRoom(){
 	return Room;
 	}
 	
-	@FindBy(xpath ="//div[@class='container-fluid']//form") 
+	@FindBy(xpath ="//select[@id='BedID']") 
 	private WebElement Bed;
 	public WebElement getBed(){
 	return Bed;
@@ -221,6 +223,21 @@ public class New_Patient_Admission_Locator {
 	private WebElement btnAddPatient;
 	public WebElement addPatient(){
 	return btnAddPatient;
+	}
+	@FindBy(xpath ="//button[@id='btnPersonalNext']") 
+	private WebElement btnNext;
+	public WebElement btnpersonalNext(){
+	return btnNext;
+	}
+	@FindBy(xpath ="//button[@id='btnContactNext']") 
+	private WebElement btnContactNext;
+	public WebElement btnconntactNext(){
+	return btnContactNext;
+	}
+	@FindBy(xpath ="//button[@id='btnHealthNext']") 
+	private WebElement btnHelthNext;
+	public WebElement btnHelthNext(){
+	return btnHelthNext;
 	}
 	
 	

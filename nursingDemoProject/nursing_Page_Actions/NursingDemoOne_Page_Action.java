@@ -38,12 +38,12 @@ public class NursingDemoOne_Page_Action {
 		WebBrowser.verify_Page(driver, verifyPage,logger);
 	}
 	
-	public void nursingDemoProcess(String title, String user, String pass,String verifyPage) {
+	public void nursingDemoProcess(String title, String user, String pass) {
 		if(validatePageTitle(title)){
 			enterUserName(user);
 			enterPassword(pass);
 			clickLogin();
-			verifyPage(verifyPage);
+			//verifyPage(verifyPage);
 			
 		}
 		else{

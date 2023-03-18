@@ -1,41 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="pageOneTitle" value="Register page"/>
-  <parameter name="birthday" value="25"/>
-  <parameter name="lastName" value="KOlhe"/>
-  <parameter name="country" value="India"/>
-  <parameter name="birthyear" value="1995"/>
-  <parameter name="gender" value="male"/>
-  <parameter name="pageThreeTitle" value="Reg3"/>
-  <parameter name="city" value="Mumbai"/>
-  <parameter name="pageFourTitle" value="Reg4"/>
-  <parameter name="pageFiveTitle" value="Login page"/>
-  <parameter name="birthmonth" value="July"/>
-  <parameter name="pageTwoTitle" value="Reg2"/>
-  <parameter name="stateName" value="Maharashtra"/>
-  <parameter name="browser" value="chrome"/>
-  <parameter name="add" value="Chembur"/>
-  <parameter name="pass" value="P@ssw0rd@123"/>
-  <parameter name="emailid" value="santosh@gmail.com"/>
-  <parameter name="mobileNo" value="93254678990"/>
-  <parameter name="pageLable" value="Welcome to Selenium Automation Testing"/>
-  <parameter name="url" value="https://www.knowledgeware.in/final.html"/>
-  <parameter name="firstName" value="Santosh"/>
-  <parameter name="confPass" value="P@ssw0rd@123"/>
-  <parameter name="pinCode" value="400071"/>
-  <parameter name="user" value="Santosh"/>
-  <parameter name="hobby" value="Dancing"/>
+<suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="knowledgeware_Page_Tests.Register_One_Page_XML_DataProvider">
+      <class name="nursing_Page_Tests.NursingDemo_Page_Test">
         <methods>
           <include name="beforeSuiteStart"/>
           <include name="afterEachTest"/>
+          <include name="NursingDemoRegistration"/>
           <include name="beforeEachTest"/>
-          <include name="registrationTestByParameter"/>
+          <include name="newPatientAdmission"/>
         </methods>
-      </class> <!-- knowledgeware_Page_Tests.Register_One_Page_XML_DataProvider -->
+      </class> <!-- nursing_Page_Tests.NursingDemo_Page_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
