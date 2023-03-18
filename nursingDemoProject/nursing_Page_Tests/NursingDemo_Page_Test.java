@@ -80,7 +80,7 @@ public class NursingDemo_Page_Test extends BaseClass {
 					//PropertyReader.get_Key_Value("Bed");
 			//PropertyReader.get_Key_Value("verifyPage"));
 			logger.log(LogStatus.PASS,logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + " NursingDemo Login Test Succesfully passed");
-                        system.out.println("Testing commit")
+                        
 		} catch (Exception e) {
 			logger.log(LogStatus.FAIL,
 					logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + e.toString().substring(1, 300));
