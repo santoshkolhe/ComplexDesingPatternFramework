@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="170236" started-at="2023-03-18T14:14:30Z" finished-at="2023-03-18T14:17:20Z">
+  <suite name="Default suite" duration-ms="265372" started-at="2023-03-19T07:11:22Z" finished-at="2023-03-19T07:15:47Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="170236" started-at="2023-03-18T14:14:30Z" finished-at="2023-03-18T14:17:20Z">
+    <test name="Default test" duration-ms="265372" started-at="2023-03-19T07:11:22Z" finished-at="2023-03-19T07:15:47Z">
       <class name="nursing_Page_Tests.NursingDemo_Page_Test">
-        <test-method status="PASS" signature="beforeSuiteStart()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@3327bd23]" name="beforeSuiteStart" is-config="true" duration-ms="56" started-at="2023-03-18T14:14:30Z" finished-at="2023-03-18T14:14:30Z">
+        <test-method status="PASS" signature="beforeSuiteStart()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="beforeSuiteStart" is-config="true" duration-ms="69" started-at="2023-03-19T07:11:22Z" finished-at="2023-03-19T07:11:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuiteStart -->
-        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@3327bd23]" name="beforeEachTest" is-config="true" duration-ms="6534" started-at="2023-03-18T14:14:30Z" finished-at="2023-03-18T14:14:36Z">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="beforeEachTest" is-config="true" duration-ms="7581" started-at="2023-03-19T07:11:22Z" finished-at="2023-03-19T07:11:29Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="NursingDemoRegistration(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@3327bd23]" name="NursingDemoRegistration" duration-ms="81322" started-at="2023-03-18T14:14:36Z" description="New Patient Admission with Valid Details" finished-at="2023-03-18T14:15:58Z">
+        <test-method status="PASS" signature="NursingDemoRegistration(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="NursingDemoRegistration" duration-ms="85038" started-at="2023-03-19T07:11:29Z" description="New Patient Admission with Valid Details" finished-at="2023-03-19T07:12:54Z">
           <params>
             <param index="0">
               <value>
@@ -33,11 +33,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NursingDemoRegistration -->
-        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@3327bd23]" name="afterEachTest" is-config="true" duration-ms="38" started-at="2023-03-18T14:15:58Z" finished-at="2023-03-18T14:15:58Z">
+        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="afterEachTest" is-config="true" duration-ms="61" started-at="2023-03-19T07:12:54Z" finished-at="2023-03-19T07:12:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@3327bd23]" name="beforeEachTest" is-config="true" duration-ms="5377" started-at="2023-03-18T14:15:58Z" finished-at="2023-03-18T14:16:03Z">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="beforeEachTest" is-config="true" duration-ms="4466" started-at="2023-03-19T07:12:54Z" finished-at="2023-03-19T07:12:59Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="NursingDemoDataProvider(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:nursing_Page_Tests.NursingDemo_Page_Test@3327bd23]" name="NursingDemoDataProvider" duration-ms="76923" started-at="2023-03-18T14:16:03Z" description="New Patient Admission with Data Provider" data-provider="NursingDemo" finished-at="2023-03-18T14:17:20Z">
+        <test-method status="PASS" signature="NursingDemoDataProvider(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="NursingDemoDataProvider" duration-ms="81042" started-at="2023-03-19T07:12:59Z" description="New Patient Admission with Data Provider" data-provider="NursingDemo" finished-at="2023-03-19T07:14:20Z">
           <params>
             <param index="0">
               <value>
@@ -229,11 +229,207 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NursingDemoDataProvider -->
-        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@3327bd23]" name="afterEachTest" is-config="true" duration-ms="18" started-at="2023-03-18T14:17:20Z" finished-at="2023-03-18T14:17:20Z">
+        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="afterEachTest" is-config="true" duration-ms="29" started-at="2023-03-19T07:14:20Z" finished-at="2023-03-19T07:14:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTest -->
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="beforeEachTest" is-config="true" duration-ms="6203" started-at="2023-03-19T07:14:20Z" finished-at="2023-03-19T07:14:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.NursingDemoDataProvider(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTest -->
+        <test-method status="PASS" signature="NursingDemoDataProvider(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="NursingDemoDataProvider" duration-ms="80898" started-at="2023-03-19T07:14:26Z" description="New Patient Admission with Data Provider" data-provider="NursingDemo" finished-at="2023-03-19T07:15:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.NursingDemoDataProvider(java.lang.reflect.Method,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NOVA GRACE HOSPITAL - Dashboard]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[99999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[M.S.Dhoni]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[30,10/10/1999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Hindu]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Indian]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Nilesh]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Friend]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Single]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2345678909]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[8763456778]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[Vashi Navi Mumbai]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Thane]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[400454]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[Vashi Police Station]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[Vashi post office]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[80]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[5.9']]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[125]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[80]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[45]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[H1_N1]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[FUTURE GENERALI INDIA INSURANCE CO LTD]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[General]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[IN-12345]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[SP32435]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[10/10/2022]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[Dr Tambe]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[DR S K SINGH]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[Normal]]>
+              </value>
+            </param>
+            <param index="33">
+              <value>
+                <![CDATA[5678902]]>
+              </value>
+            </param>
+            <param index="34">
+              <value>
+                <![CDATA[GENERAL WARD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NursingDemoDataProvider -->
+        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="afterEachTest" is-config="true" duration-ms="21" started-at="2023-03-19T07:15:47Z" finished-at="2023-03-19T07:15:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
       </class> <!-- nursing_Page_Tests.NursingDemo_Page_Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
