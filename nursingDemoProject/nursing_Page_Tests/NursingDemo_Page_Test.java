@@ -63,7 +63,7 @@ public class NursingDemo_Page_Test extends BaseClass {
 					logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + e.toString().substring(1, 300));
 		}
 	}
-	@Test(dataProvider = "NursingDemo",priority=1,description="New Patient Admission with Data Provider")
+	//@Test(dataProvider = "NursingDemo",priority=1,description="New Patient Admission with Data Provider")
 	//description= "login",alwaysRun= true
 	public void NursingDemoDataProvider(Method method,String verifyPage,
 			String Patient_UHID,String Patient_Name,

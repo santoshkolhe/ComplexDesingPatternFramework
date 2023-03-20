@@ -2,17 +2,18 @@ package common_Functions_Web;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriver.Options;
+
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.opera.OperaOptions;
+
 import org.openqa.selenium.safari.SafariDriver;
-import org.testng.Assert;
+
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebBrowser {
 	public static boolean titleVerification(WebDriver driver, String expTitle, ExtentTest logger) {
@@ -70,10 +71,13 @@ public class WebBrowser {
 
 	public static WebDriver getBrowserInstance(String browserName){
 		WebDriver driver=null;
+		//WebDriverManager.chromedriver().setup();
 		switch (browserName){
 		
 		case"chrome":
 			//Options.addArguments("--remote-allow-origins=*");
+			//WebDriverManager.chromedriver().setup();
+			//WebDriver driver = new ChromeDriver();
 			driver=new ChromeDriver();
 			break;
 			
