@@ -62,7 +62,7 @@ public class BaseClass {
 		graphicalReport.endTest(logger);
 		graphicalReport.flush();
 		//driver.close();
-	}
+	} 
 	@DataProvider
 	  public Object[][] registerPage1() {
 	    return new Object[][] {
