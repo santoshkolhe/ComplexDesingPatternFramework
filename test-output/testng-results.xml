@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19422" started-at="2023-03-20T03:05:04Z" finished-at="2023-03-20T03:05:23Z">
+  <suite name="Default suite" duration-ms="14705" started-at="2023-03-23T04:13:31Z" finished-at="2023-03-23T04:13:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19422" started-at="2023-03-20T03:05:04Z" finished-at="2023-03-20T03:05:23Z">
+    <test name="Default test" duration-ms="14705" started-at="2023-03-23T04:13:31Z" finished-at="2023-03-23T04:13:46Z">
       <class name="nursing_Page_Tests.NursingDemo_Page_Test">
-        <test-method status="PASS" signature="beforeSuiteStart()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="beforeSuiteStart" is-config="true" duration-ms="41" started-at="2023-03-20T03:05:04Z" finished-at="2023-03-20T03:05:04Z">
+        <test-method status="PASS" signature="beforeSuiteStart()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="beforeSuiteStart" is-config="true" duration-ms="41" started-at="2023-03-23T04:13:31Z" finished-at="2023-03-23T04:13:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuiteStart -->
-        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="beforeEachTest" is-config="true" duration-ms="8643" started-at="2023-03-20T03:05:04Z" finished-at="2023-03-20T03:05:12Z">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="beforeEachTest" is-config="true" duration-ms="5745" started-at="2023-03-23T04:13:31Z" finished-at="2023-03-23T04:13:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.NursingDemoRegistration(java.lang.reflect.Method) throws java.io.IOException]]>
+                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.DoctorConvIPD(java.lang.reflect.Method) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="NursingDemoRegistration(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="NursingDemoRegistration" duration-ms="10718" started-at="2023-03-20T03:05:12Z" description="New Patient Admission with Valid Details" finished-at="2023-03-20T03:05:23Z">
+        <test-method status="PASS" signature="DoctorConvIPD(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="DoctorConvIPD" duration-ms="8916" started-at="2023-03-23T04:13:37Z" finished-at="2023-03-23T04:13:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.NursingDemoRegistration(java.lang.reflect.Method) throws java.io.IOException]]>
+                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.DoctorConvIPD(java.lang.reflect.Method) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NursingDemoRegistration -->
-        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@a67c67e]" name="afterEachTest" is-config="true" duration-ms="42" started-at="2023-03-20T03:05:23Z" finished-at="2023-03-20T03:05:23Z">
+        </test-method> <!-- DoctorConvIPD -->
+        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="afterEachTest" is-config="true" duration-ms="21" started-at="2023-03-23T04:13:46Z" finished-at="2023-03-23T04:13:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->

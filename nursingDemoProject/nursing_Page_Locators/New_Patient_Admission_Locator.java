@@ -51,9 +51,9 @@ public class New_Patient_Admission_Locator {
 		return dob;
 	}
 	@FindBy(xpath="//select[@id='Gender']")
-	private WebElement allHobby;
+	private WebElement gender;
 	public WebElement getGender() {
-		return allHobby;
+		return gender;
 	}
 	
 	@FindBy(xpath ="//select[@id='Religion']") 

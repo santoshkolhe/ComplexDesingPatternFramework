@@ -8,11 +8,12 @@ import com.relevantcodes.extentreports.LogStatus;
 import common_Component.BaseClass;
 import common_Component.Reporter;
 import dataSource.PropertyReader;
+import nursing_Page_Actions.Doctor_Convenience_IPD_Action;
 import nursing_Page_Actions.New_Patient_Admission_Action;
 
 
 public class NursingDemo_Page_Test extends BaseClass {
-	@Test(description="New Patient Admission with Valid Details")
+	//@Test(description="New Patient Admission with Valid Details")
 	//description= "login",alwaysRun= true
 	public void NursingDemoRegistration(Method method) throws IOException {
 		try {
@@ -86,4 +87,26 @@ public class NursingDemo_Page_Test extends BaseClass {
 					logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + e.toString().substring(1, 300));
 		}
 	}
+	
+
+	@Test()//dependsOnMethods = {"NursingDemologin"}
+	public void DoctorConvIPD(Method method) throws IOException{
+		try {
+			Doctor_Convenience_IPD_Action docConvIPD = new Doctor_Convenience_IPD_Action(driver, logger);
+			docConvIPD.DoctorConvIPDProcess(PropertyReader.get_Key_Value("titleAfterLogin"), 
+					PropertyReader.get_Key_Value("Doctor")); 
+					
+					
+					                        
+			logger.log(LogStatus.PASS, logger.addScreenCapture(Reporter.takeScreenShot(driver, method)),
+					   "nursingDemo Doctor covenience IPD Test Successfully passed");
+
+		} catch (Exception e) {
+			logger.log(LogStatus.FAIL, logger.addScreenCapture(Reporter.takeScreenShot(driver, method))
+					+ e.toString().substring(1, 300));
+		}
+		
+	}
+
+
 }

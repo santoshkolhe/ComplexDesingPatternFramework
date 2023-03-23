@@ -2,10 +2,13 @@ package common_Component;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -15,7 +18,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 import common_Functions_Web.WebBrowser;
-import common_Functions_Web.WebButton;
+
 import dataSource.PropertyReader;
 import nursing_Page_Actions.NursingDemoOne_Page_Action;
 
@@ -26,15 +29,18 @@ public class BaseClass {
 	@BeforeSuite
 	public void beforeSuiteStart(){
 		//Knowledeware Report
-		//graphicalReport = new ExtentReports("C:/MyWorkspace/Complex_Design_Pattern_Framework/Report/Knowledgeware/Knowledgeware.html", true);
-		
-		graphicalReport = new ExtentReports("C:/MyWorkspace/Complex_Design_Pattern_Framework/Report/NursingDemo/NursingDemo.html", true);
+		//graphicalReport = new ExtentReports("C:/MyWorkspace/Complex_Design_Pattern_Framework/Report/Knowledgeware/Knowledgeware"+timestamp+".html", true);
+		String timestamp = new SimpleDateFormat("yyyy_MM_dd__hh_mm_ss").format(new Date());
+		graphicalReport = new ExtentReports("C:/MyWorkspace/Complex_Design_Pattern_Framework/Report/NursingDemo/NursingDemo"+timestamp+".html", true);
 	}
 	@BeforeMethod()
 	public void beforeEachTest(Method testMethod) throws IOException{
+		ChromeOptions co = new ChromeOptions();
+		co.addArguments("--remote-allow-origins=*");
+	    driver =new ChromeDriver(co);
 		logger = graphicalReport.startTest(testMethod.getName());
 		//driver = WebBrowser.getBrowserInstance(PropertyReader.getKeyValue("browser"));//Knowledeware
-		driver = WebBrowser.getBrowserInstance(PropertyReader.get_Key_Value("browser"));//Nursing Demo
+		//driver = WebBrowser.getBrowserInstance(PropertyReader.get_Key_Value("browser"));//Nursing Demo
 		//driver = WebBrowser.getBrowserInstance("firefox");
 		//driver.get(PropertyReader.getKeyValue("url"));//Knowledeware
 		driver.get(PropertyReader.get_Key_Value("url"));//Nursing Demo
