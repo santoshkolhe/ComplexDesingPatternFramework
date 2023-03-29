@@ -1,19 +1,15 @@
 package nursing_Page_Tests;
-
 import java.io.IOException;
 import java.lang.reflect.Method;
-
 import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 import common_Component.BaseClass;
 import common_Component.Reporter;
 import dataSource.PropertyReader;
-import nursing_Page_Actions.Doctor_Convenience_IPD_Action;
 import nursing_Page_Actions.New_Patient_Admission_Action;
 
-
 public class NursingDemo_Page_Test extends BaseClass {
-	//@Test(description="New Patient Admission with Valid Details")
+	@Test(description="New Patient Admission with Valid Details")
 	//description= "login",alwaysRun= true
 	public void NursingDemoRegistration(Method method) throws IOException {
 		try {
@@ -57,14 +53,14 @@ public class NursingDemo_Page_Test extends BaseClass {
 				);
 					
 			//PropertyReader.get_Key_Value("verifyPage"));
-			logger.log(LogStatus.PASS,logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + " NursingDemo Login Test Succesfully passed");
+			logger.log(LogStatus.PASS,logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + " NursingDemo Register page Succesfully passed");
 
 		} catch (Exception e) {
 			logger.log(LogStatus.FAIL,
 					logger.addScreenCapture(Reporter.takeScreenShot(driver, method)) + e.toString().substring(1, 300));
 		}
 	}
-	//@Test(dataProvider = "NursingDemo",priority=1,description="New Patient Admission with Data Provider")
+	@Test(dataProvider = "NursingDemo",priority=2,description="New Patient Admission with Data Provider")
 	//description= "login",alwaysRun= true
 	public void NursingDemoDataProvider(Method method,String verifyPage,
 			String Patient_UHID,String Patient_Name,
@@ -88,25 +84,4 @@ public class NursingDemo_Page_Test extends BaseClass {
 		}
 	}
 	
-
-	@Test()//dependsOnMethods = {"NursingDemologin"}
-	public void DoctorConvIPD(Method method) throws IOException{
-		try {
-			Doctor_Convenience_IPD_Action docConvIPD = new Doctor_Convenience_IPD_Action(driver, logger);
-			docConvIPD.DoctorConvIPDProcess(PropertyReader.get_Key_Value("titleAfterLogin"), 
-					PropertyReader.get_Key_Value("Doctor")); 
-					
-					
-					                        
-			logger.log(LogStatus.PASS, logger.addScreenCapture(Reporter.takeScreenShot(driver, method)),
-					   "nursingDemo Doctor covenience IPD Test Successfully passed");
-
-		} catch (Exception e) {
-			logger.log(LogStatus.FAIL, logger.addScreenCapture(Reporter.takeScreenShot(driver, method))
-					+ e.toString().substring(1, 300));
-		}
-		
-	}
-
-
 }

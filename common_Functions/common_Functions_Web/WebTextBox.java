@@ -37,8 +37,5 @@ public class WebTextBox {
 			textBox.clear();
 			textBox.sendKeys(value);
 			}
-	
-	
-
-}
+	}
 

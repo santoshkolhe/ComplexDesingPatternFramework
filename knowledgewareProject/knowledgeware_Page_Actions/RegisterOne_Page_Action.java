@@ -1,5 +1,7 @@
 package knowledgeware_Page_Actions;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -27,19 +29,21 @@ public class RegisterOne_Page_Action {
 	}
 	
 	public void enterUserName(String user){
-		WebElement userName = regOnePL.getUserName();
+		//WebElement userName = regOnePL.getUserName();
 		//WebTextBox.sendInput(userName, user, logger);
 		
-		WebTextBox.sendInput(WebWait.webElementClickable(driver, userName),user, logger);
+		WebTextBox.sendInput(WebWait.webElementClickable(driver, regOnePL.getUserName(),Duration.ofSeconds(10)),user, logger);
 		
 	}
 	
 	public void enterPassword(String pass){
-		WebTextBox.sendInput(regOnePL.getPassword(), pass, logger);
+		//WebTextBox.sendInput(regOnePL.getPassword(), pass, logger);
+		WebTextBox.sendInput(WebWait.webElementClickable(driver, regOnePL.getPassword(),Duration.ofSeconds(10)),pass, logger);
 	}
 	
 	public void enterConfPass(String confPass){
-		WebTextBox.sendInput(regOnePL.getConfirmPassword(), confPass, logger);
+	//	WebTextBox.sendInput(regOnePL.getConfirmPassword(), confPass, logger);
+		WebTextBox.sendInput(WebWait.webElementClickable(driver, regOnePL.getConfirmPassword(),Duration.ofSeconds(10)),confPass, logger);
 	}
 	public void clkLogin(){
 		WebTextBox.click(regOnePL.clkLogin(), logger);

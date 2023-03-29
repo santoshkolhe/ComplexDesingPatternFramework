@@ -287,7 +287,7 @@ public class WebWait {
 		return wait.until(ExpectedConditions.jsReturnsValue(jscript));
 	}
 
-	public static Boolean webElemenTtitleContains(WebDriver driver, String title, Duration duration) {
+	public static Boolean webElementTitleContains(WebDriver driver, String title, Duration duration) {
 		WebDriverWait wait = new WebDriverWait(driver, duration);
 		return wait.until(ExpectedConditions.titleContains(title));
 	}

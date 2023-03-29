@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeSuiteStart"/>
           <include name="afterEachTest"/>
-          <include name="DoctorConvIPD"/>
+          <include name="NursingDemoDataProvider"/>
           <include name="beforeEachTest"/>
         </methods>
       </class> <!-- nursing_Page_Tests.NursingDemo_Page_Test -->

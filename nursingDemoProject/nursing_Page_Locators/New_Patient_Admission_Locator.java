@@ -1,13 +1,9 @@
 package nursing_Page_Locators;
 
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import common_Functions_Web.WebTextBox;
 
 public class New_Patient_Admission_Locator {
 	WebDriver driver = null;
@@ -244,7 +240,4 @@ public class New_Patient_Admission_Locator {
 	public WebElement alertHandle(){
 	return btnalert;
 	}
-	
-	
-	
 }
