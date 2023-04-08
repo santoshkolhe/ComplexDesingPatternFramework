@@ -1,82 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23982" started-at="2023-03-25T12:56:59Z" finished-at="2023-03-25T12:57:23Z">
+  <suite name="Default suite" duration-ms="17433" started-at="2023-04-08T18:07:45Z" finished-at="2023-04-08T18:08:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23982" started-at="2023-03-25T12:56:59Z" finished-at="2023-03-25T12:57:23Z">
-      <class name="nursing_Page_Tests.NursingDemo_Page_Test">
-        <test-method status="PASS" signature="beforeSuiteStart()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="beforeSuiteStart" is-config="true" duration-ms="37" started-at="2023-03-25T12:56:59Z" finished-at="2023-03-25T12:56:59Z">
+    <test name="Default test" duration-ms="17433" started-at="2023-04-08T18:07:45Z" finished-at="2023-04-08T18:08:02Z">
+      <class name="nursing_Page_Tests.DoctorLogin">
+        <test-method status="PASS" signature="beforeSuiteStart()[pri:0, instance:nursing_Page_Tests.DoctorLogin@5ec0a365]" name="beforeSuiteStart" is-config="true" duration-ms="70" started-at="2023-04-08T18:07:45Z" finished-at="2023-04-08T18:07:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuiteStart -->
-        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="beforeEachTest" is-config="true" duration-ms="5756" started-at="2023-03-25T12:56:59Z" finished-at="2023-03-25T12:57:05Z">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.DoctorLogin@5ec0a365]" name="beforeEachTest" is-config="true" duration-ms="10029" started-at="2023-04-08T18:07:45Z" finished-at="2023-04-08T18:07:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.NursingDemoRegistration(java.lang.reflect.Method) throws java.io.IOException]]>
+                <![CDATA[public void nursing_Page_Tests.DoctorLogin.loginTC(java.lang.reflect.Method) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="NursingDemoRegistration(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="NursingDemoRegistration" duration-ms="18174" started-at="2023-03-25T12:57:05Z" description="New Patient Admission with Valid Details" finished-at="2023-03-25T12:57:23Z">
+        <test-method status="PASS" signature="loginTC(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.DoctorLogin@5ec0a365]" name="loginTC" duration-ms="7355" started-at="2023-04-08T18:07:55Z" finished-at="2023-04-08T18:08:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.NursingDemoRegistration(java.lang.reflect.Method) throws java.io.IOException]]>
+                <![CDATA[public void nursing_Page_Tests.DoctorLogin.loginTC(java.lang.reflect.Method) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NursingDemoRegistration -->
-        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="afterEachTest" is-config="true" duration-ms="28" started-at="2023-03-25T12:57:23Z" finished-at="2023-03-25T12:57:23Z">
+        </test-method> <!-- loginTC -->
+        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.DoctorLogin@5ec0a365]" name="afterEachTest" is-config="true" duration-ms="22" started-at="2023-04-08T18:08:02Z" finished-at="2023-04-08T18:08:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method status="FAIL" signature="NursingDemoDataProvider(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="NursingDemoDataProvider" duration-ms="2" started-at="2023-03-25T12:57:23Z" description="New Patient Admission with Data Provider" data-provider="NursingDemo" finished-at="2023-03-25T12:57:23Z">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-Data provider mismatch
-Method: NursingDemoDataProvider([Parameter{index=0, type=java.lang.reflect.Method, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=19, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=20, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=21, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=22, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=23, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=24, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=25, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=26, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=27, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=28, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=29, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=30, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=31, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=32, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=33, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=34, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) MAA LALITA HOSPITAL & RESEARCH CENTRE - Dashboard,(java.lang.String) 867354,(java.lang.String) Virat Kohli,(java.lang.String) Male,(java.lang.String) 30,(java.lang.String) 10/10/1999,(java.lang.String) Male,(java.lang.String) Hindu,(java.lang.String) Indian,(java.lang.String) Vilas,(java.lang.String) Friend,(java.lang.String) Single,(java.lang.String) 5467890876,(java.lang.String) 8763456778,(java.lang.String) Kurla Mumbai,(java.lang.String) Thane,(java.lang.String) 400454,(java.lang.String) Kurla Police Station,(java.lang.String) Kurla post office,(java.lang.String) 80,(java.lang.String) 5.9',(java.lang.String) 125,(java.lang.String) 80,(java.lang.String) 45,(java.lang.String) H1_N1,(java.lang.String) FUTURE GENERALI INDIA INSURANCE CO LTD,(java.lang.String) General,(java.lang.String) IN-12345,(java.lang.String) SP32435,(java.lang.String) 10/10/2022,(java.lang.String) Dr Tambe,(java.lang.String) DR S K SINGH,(java.lang.String) Normal,(java.lang.String) 5678902,(java.lang.String) GW 04 - GENERAL WARD]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: NursingDemoDataProvider([Parameter{index=0, type=java.lang.reflect.Method, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=12, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=13, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=14, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=15, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=16, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=17, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=18, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=19, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=20, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=21, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=22, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=23, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=24, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=25, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=26, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=27, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=28, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=29, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=30, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=31, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=32, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=33, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=34, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) MAA LALITA HOSPITAL & RESEARCH CENTRE - Dashboard,(java.lang.String) 867354,(java.lang.String) Virat Kohli,(java.lang.String) Male,(java.lang.String) 30,(java.lang.String) 10/10/1999,(java.lang.String) Male,(java.lang.String) Hindu,(java.lang.String) Indian,(java.lang.String) Vilas,(java.lang.String) Friend,(java.lang.String) Single,(java.lang.String) 5467890876,(java.lang.String) 8763456778,(java.lang.String) Kurla Mumbai,(java.lang.String) Thane,(java.lang.String) 400454,(java.lang.String) Kurla Police Station,(java.lang.String) Kurla post office,(java.lang.String) 80,(java.lang.String) 5.9',(java.lang.String) 125,(java.lang.String) 80,(java.lang.String) 45,(java.lang.String) H1_N1,(java.lang.String) FUTURE GENERALI INDIA INSURANCE CO LTD,(java.lang.String) General,(java.lang.String) IN-12345,(java.lang.String) SP32435,(java.lang.String) 10/10/2022,(java.lang.String) Dr Tambe,(java.lang.String) DR S K SINGH,(java.lang.String) Normal,(java.lang.String) 5678902,(java.lang.String) GW 04 - GENERAL WARD]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NursingDemoDataProvider -->
-      </class> <!-- nursing_Page_Tests.NursingDemo_Page_Test -->
+      </class> <!-- nursing_Page_Tests.DoctorLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
