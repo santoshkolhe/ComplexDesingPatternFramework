@@ -2,42 +2,42 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17433" started-at="2023-04-08T18:07:45Z" finished-at="2023-04-08T18:08:02Z">
+  <suite name="Default suite" duration-ms="27439" started-at="2023-04-09T10:45:12Z" finished-at="2023-04-09T10:45:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17433" started-at="2023-04-08T18:07:45Z" finished-at="2023-04-08T18:08:02Z">
-      <class name="nursing_Page_Tests.DoctorLogin">
-        <test-method status="PASS" signature="beforeSuiteStart()[pri:0, instance:nursing_Page_Tests.DoctorLogin@5ec0a365]" name="beforeSuiteStart" is-config="true" duration-ms="70" started-at="2023-04-08T18:07:45Z" finished-at="2023-04-08T18:07:45Z">
+    <test name="Default test" duration-ms="27439" started-at="2023-04-09T10:45:12Z" finished-at="2023-04-09T10:45:40Z">
+      <class name="nursing_Page_Tests.NursingDemo_Page_Test">
+        <test-method status="PASS" signature="beforeSuiteStart()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="beforeSuiteStart" is-config="true" duration-ms="63" started-at="2023-04-09T10:45:12Z" finished-at="2023-04-09T10:45:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuiteStart -->
-        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.DoctorLogin@5ec0a365]" name="beforeEachTest" is-config="true" duration-ms="10029" started-at="2023-04-08T18:07:45Z" finished-at="2023-04-08T18:07:55Z">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="beforeEachTest" is-config="true" duration-ms="7895" started-at="2023-04-09T10:45:12Z" finished-at="2023-04-09T10:45:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void nursing_Page_Tests.DoctorLogin.loginTC(java.lang.reflect.Method) throws java.io.IOException]]>
+                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.NursingDemoRegistration(java.lang.reflect.Method) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="loginTC(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.DoctorLogin@5ec0a365]" name="loginTC" duration-ms="7355" started-at="2023-04-08T18:07:55Z" finished-at="2023-04-08T18:08:02Z">
+        <test-method status="PASS" signature="NursingDemoRegistration(java.lang.reflect.Method)[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="NursingDemoRegistration" duration-ms="19476" started-at="2023-04-09T10:45:20Z" description="New Patient Admission with Valid Details" finished-at="2023-04-09T10:45:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void nursing_Page_Tests.DoctorLogin.loginTC(java.lang.reflect.Method) throws java.io.IOException]]>
+                <![CDATA[public void nursing_Page_Tests.NursingDemo_Page_Test.NursingDemoRegistration(java.lang.reflect.Method) throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTC -->
-        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.DoctorLogin@5ec0a365]" name="afterEachTest" is-config="true" duration-ms="22" started-at="2023-04-08T18:08:02Z" finished-at="2023-04-08T18:08:02Z">
+        </test-method> <!-- NursingDemoRegistration -->
+        <test-method status="PASS" signature="afterEachTest()[pri:0, instance:nursing_Page_Tests.NursingDemo_Page_Test@5ec0a365]" name="afterEachTest" is-config="true" duration-ms="33" started-at="2023-04-09T10:45:40Z" finished-at="2023-04-09T10:45:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-      </class> <!-- nursing_Page_Tests.DoctorLogin -->
+      </class> <!-- nursing_Page_Tests.NursingDemo_Page_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

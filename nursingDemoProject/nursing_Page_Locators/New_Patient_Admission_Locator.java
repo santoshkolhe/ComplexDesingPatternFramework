@@ -1,5 +1,6 @@
 package nursing_Page_Locators;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,7 +25,7 @@ public class New_Patient_Admission_Locator {
 		return rTab;
 	}
 	
-	@FindBy(xpath ="//input[@id='UHID']") 
+	@FindBy(id ="UHID") 
 	private WebElement uhid;
 	public WebElement getUHIDId(){
 		return uhid;

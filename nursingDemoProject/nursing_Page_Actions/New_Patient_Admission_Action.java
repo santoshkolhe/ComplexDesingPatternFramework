@@ -1,6 +1,10 @@
 package nursing_Page_Actions;
 import java.time.Duration;
+
+
 import org.openqa.selenium.WebDriver;
+
+
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import common_Functions_Web.WebBrowser;
@@ -32,7 +36,10 @@ public class New_Patient_Admission_Action {
 	public void clickPatientRegi(){
 		//WebButton.click(patientDetailsPL.clkPatientRegi(),logger);
 	//	WebTextBox.click(WebWait.webElementClickable(driver, patientDetailsPL.clkPatientRegi()), logger);
-		WebTextBox.click(WebWait.webElementClickable(driver, patientDetailsPL.clkPatientRegi(),Duration.ofSeconds(10)), logger);
+	WebTextBox.click(WebWait.webElementClickable(driver, patientDetailsPL.clkPatientRegi(),Duration.ofSeconds(10)), logger);
+
+		
+
 	}
 	public boolean validatePageTitle(String expectedTitle){
 		//boolean titleMatch=false;
@@ -64,7 +71,7 @@ public class New_Patient_Admission_Action {
 	public void birthDate(String date){
 		//WebTextBox.sendInput(patientDetailsPL.getBirthDate(), date, logger);
 	//	WebTextBox.sendInput(WebWait.webElementClickable(driver,patientDetailsPL.getBirthDate()),date, logger);
-		WebTextBox.sendInput(WebWait.webElementClickable(driver, patientDetailsPL.getBirthDate(),Duration.ofSeconds(10)),date, logger);
+		WebTextBox.sendInputTab(WebWait.webElementClickable(driver, patientDetailsPL.getBirthDate(),Duration.ofSeconds(10)),date, logger);
 	}
 	public void gender(String gender){
 	//	WebDropDown.selectByVisibleText(patientDetailsPL.getGender(), gender, logger);
@@ -160,7 +167,7 @@ public class New_Patient_Admission_Action {
 	}
 	public void admission_Date(String admissionDate){
 		//WebTextBox.sendInput(patientDetailsPL.getAdmission_Date(), admissionDate, logger);
-		WebTextBox.sendInput(WebWait.webElementClickable(driver,patientDetailsPL.getAdmission_Date(),Duration.ofSeconds(10)),admissionDate, logger);
+		WebTextBox.sendInputTab(WebWait.webElementClickable(driver,patientDetailsPL.getAdmission_Date(),Duration.ofSeconds(10)),admissionDate, logger);
 	}
 	public void referred_By(String reBy){
 		//WebTextBox.sendInput(patientDetailsPL.getReferred_By(), reBy, logger);

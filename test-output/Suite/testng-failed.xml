@@ -7,9 +7,9 @@
         <methods>
           <include name="beforeSuiteStart"/>
           <include name="afterEachTest"/>
-          <include name="NursingDemoRegistration"/>
+          <include name="NursingDemoDataProvider"/>
+          <include name="NursingDemoRegistration" invocation-numbers="0"/>
           <include name="beforeEachTest"/>
-          <include name="newPatientAdmission"/>
         </methods>
       </class> <!-- nursing_Page_Tests.NursingDemo_Page_Test -->
     </classes>

@@ -1,6 +1,7 @@
 package common_Functions_Web;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -12,6 +13,16 @@ public class WebTextBox {
 		if(WebElementCommon.isClickable(textBox)){
 			textBox.clear();
 			textBox.sendKeys(text);
+			logger.log(LogStatus.PASS, text+ " entered succesfully.");
+			
+		}else{
+			logger.log(LogStatus.FAIL, text+ " not entered.");
+		}
+	}
+	public static void sendInputTab(WebElement textBox, String text,ExtentTest logger){
+		if(WebElementCommon.isClickable(textBox)){
+			textBox.sendKeys(text);
+			textBox.sendKeys(Keys.TAB);
 			logger.log(LogStatus.PASS, text+ " entered succesfully.");
 			
 		}else{
